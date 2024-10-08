@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.1.5
+%define		kdeplasmaver	6.2.0
 %define		qtver		5.15.2
 %define		kpname		ksystemstats
 Summary:	ksystemstats
 Name:		kp6-%{kpname}
-Version:	6.1.5
+Version:	6.2.0
 Release:	1
 License:	BSD Clause 2
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	2e2702588c2345f94125a611f56f82b6
+# Source0-md5:	406e6e3bb9a42ba893e2c7533f120068
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= 5.15.0
 BuildRequires:	cmake >= 3.16.0
@@ -22,7 +22,7 @@ BuildRequires:	kf6-kdbusaddons-devel >= 5.82
 BuildRequires:	kf6-kio-devel >= 5.82
 BuildRequires:	kf6-networkmanager-qt-devel >= 5.82
 BuildRequires:	kf6-solid-devel >= 5.85.0
-BuildRequires:	kp6-libksysguard-devel
+BuildRequires:	kp6-libksysguard-devel >= %{version}
 BuildRequires:	libnl-devel
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
