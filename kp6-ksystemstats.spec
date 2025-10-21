@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.4.5
+%define		kdeplasmaver	6.5.0
 %define		qtver		5.15.2
 %define		kpname		ksystemstats
 Summary:	ksystemstats
 Name:		kp6-%{kpname}
-Version:	6.4.5
-Release:	2
+Version:	6.5.0
+Release:	1
 License:	BSD Clause 2
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	4451101bc209873d8baa99f0ca81a404
+# Source0-md5:	ed1abca2db6ecfcfa8d2c0371f403092
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= 5.15.0
 BuildRequires:	cmake >= 3.16.0
