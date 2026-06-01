@@ -40,6 +40,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KSystemStats is a daemon that collects statistics about the running
 system.
 
+%description -l pl.UTF-8
+KSystemStats jest demonem, który zbiera statystyki na temat
+działającego systemu.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
